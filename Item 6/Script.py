@@ -4,14 +4,14 @@ import json
 from netmiko import ConnectHandler
 
 cisco1 = {
-    "ip": "172.30.33.147",
+    "ip": "131.226.217.149",
     "device_type": "cisco_ios",
-    "username": "cisco",
-    "password": "cisco123!",
+    "username": "developer",
+    "password": "lastorangerestoreball8876",
 }
 
 # Comando "show" que ejecutamos.
-command = "show run"
+command = "sh ver"
 
 with ConnectHandler(**cisco1) as net_connect:
     output = net_connect.send_command(command)
