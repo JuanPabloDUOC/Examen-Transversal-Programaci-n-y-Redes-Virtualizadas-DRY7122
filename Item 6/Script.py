@@ -11,6 +11,8 @@ cisco1 = {
 }
 
 # Comando "show" que ejecutamos.
+#command = "sh ip int brief"
+#command = "sh run"
 command = "sh ver"
 
 with ConnectHandler(**cisco1) as net_connect:
